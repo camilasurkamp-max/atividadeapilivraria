@@ -67,6 +67,44 @@ export default function TelaInicial() {
           </View>
         </Pressable>
 
+         <Pressable
+          style={styles.cartao}
+          onPress={() => router.push("/contador")}
+        >
+          <Text style={styles.numero}>05</Text>
+          <View style={styles.informacoes}>
+            <Text style={styles.cartaoTitulo}>Abrir contador</Text>
+            <Text style={styles.detalhe}>contador</Text>
+          </View>
+        </Pressable>
+
+
+        <Pressable
+          style={styles.cartao}
+          onPress={() => router.push("/flores")}
+        >
+          <Text style={styles.numero}>06</Text>
+          <View style={styles.informacoes}>
+            <Text style={styles.cartaoTitulo}>Lista de flores</Text>
+            <Text style={styles.detalhe}>Gerenciar flores</Text>
+          </View>
+        </Pressable>
+
+
+<Pressable
+          style={styles.cartao}
+          onPress={() => router.push("/listamusicas")}
+        >
+          <Text style={styles.numero}>07</Text>
+          <View style={styles.informacoes}>
+            <Text style={styles.cartaoTitulo}>Lista de músicas</Text>
+            <Text style={styles.detalhe}>Músicas</Text>
+          </View>
+        </Pressable>
+
+
+
+
         {/* ATIVIDADES COM API */}
         <Text style={styles.secao}>Atividades com API</Text>
 
@@ -74,7 +112,7 @@ export default function TelaInicial() {
           style={styles.cartao}
           onPress={() => router.push("/cachorro")}
         >
-          <Text style={styles.numero}>05</Text>
+          <Text style={styles.numero}>08</Text>
           <View style={styles.informacoes}>
             <Text style={styles.cartaoTitulo}>Buscar Cachorros</Text>
             <Text style={styles.detalhe}>Fotos de cachorros</Text>
@@ -85,7 +123,7 @@ export default function TelaInicial() {
           style={styles.cartao}
           onPress={() => router.push("/cnpj")}
         >
-          <Text style={styles.numero}>06</Text>
+          <Text style={styles.numero}>09</Text>
           <View style={styles.informacoes}>
             <Text style={styles.cartaoTitulo}>Buscar CNPJ</Text>
             <Text style={styles.detalhe}>Consultar empresas</Text>
@@ -96,7 +134,7 @@ export default function TelaInicial() {
           style={styles.cartao}
           onPress={() => router.push("/cep")}
         >
-          <Text style={styles.numero}>07</Text>
+          <Text style={styles.numero}>10</Text>
           <View style={styles.informacoes}>
             <Text style={styles.cartaoTitulo}>Buscar CEP</Text>
             <Text style={styles.detalhe}>Consultar endereços</Text>
@@ -107,7 +145,7 @@ export default function TelaInicial() {
           style={styles.cartao}
           onPress={() => router.push("/pokemon")}
         >
-          <Text style={styles.numero}>08</Text>
+          <Text style={styles.numero}>11</Text>
           <View style={styles.informacoes}>
             <Text style={styles.cartaoTitulo}>Buscar Pokémon</Text>
             <Text style={styles.detalhe}>Informações de Pokémon</Text>
@@ -118,9 +156,21 @@ export default function TelaInicial() {
           style={styles.cartao}
           onPress={() => router.push("/bordeis")}
         >
-          <Text style={styles.numero}>09</Text>
+          <Text style={styles.numero}>12</Text>
           <View style={styles.informacoes}>
             <Text style={styles.cartaoTitulo}>Buscar Bordeis</Text>
+            <Text style={styles.detalhe}>Cadastro usando MockAPI</Text>
+          </View>
+        </Pressable>
+
+
+         <Pressable
+          style={styles.cartao}
+          onPress={() => router.push("/livraria")}
+        >
+          <Text style={styles.numero}>13</Text>
+          <View style={styles.informacoes}>
+            <Text style={styles.cartaoTitulo}>Buscar Livraria</Text>
             <Text style={styles.detalhe}>Cadastro usando MockAPI</Text>
           </View>
         </Pressable>

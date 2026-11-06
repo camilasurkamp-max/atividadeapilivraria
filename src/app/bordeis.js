@@ -36,6 +36,7 @@ export default function BordeisApi() {
 
                 onChangeText={setCor} placeholder="Cor do bordel" />
             <Button title="Salvar na API" onPress={salvar} />
+            
             <FlatList style={styles.lista} data={lista}
                 keyExtractor={(item) => String(item.id)}
                 renderItem={({ item }) => (
